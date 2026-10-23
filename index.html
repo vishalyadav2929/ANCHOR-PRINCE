@@ -382,6 +382,17 @@
     
       /* budget amount nowrap 2026-10-23 */
       .amt-nowrap { white-space: nowrap; }
+    
+      /* mobile-first polish 2026-10-23 (2) */
+      .about-duo { grid-template-columns: 1fr; }
+      .about-duo .img-frame:first-child { aspect-ratio: 4/3; }
+      .about-duo .img-frame:last-child { aspect-ratio: 4/3; }
+      @media (max-width: 760px) {
+        .hero .hero-img.hero-home { object-position: 85% 50%; }
+      }
+      @media (max-width: 560px) {
+        .hero-ctas .btn { flex: 1 1 100%; }
+      }
     </style>
   </head>
   <body>
@@ -421,7 +432,7 @@
       <!-- ============================ HOME ============================ -->
       <section class="view" id="view-home" data-title="Best Wedding Anchor in India — Anchor Prince | Jaipur · Udaipur · Destination Weddings" data-desc="Anchor Prince (Prince Sharma) — the show-runner wedding anchor for luxury and destination weddings across India. On stage since 2014, hosting in Hindi, English, Marwadi & Punjabi. Share your budget — our team will plan the best celebration within your budget and share the final quote on enquiry. Check your date on Instagram.">
         <div class="hero">
-          <img class="hero-img" src="assets/prince-stage-couple.jpg" alt="Anchor Prince hosting a luxury wedding sangeet live on stage with the laughing couple — best wedding anchor in India" fetchpriority="high" />
+          <img class="hero-img hero-home" src="assets/prince-stage-couple.jpg" alt="Anchor Prince hosting a luxury wedding sangeet live on stage with the laughing couple — best wedding anchor in India" fetchpriority="high" />
           <div class="veil"></div>
           <div class="wrap hero-content">
             <p class="crest"><span class="crest-line">Anchor &middot; Entertainer &middot; Wedding Host &middot;</span><span class="crest-line">Master of Ceremony &mdash; <span class="crest-name">Prince&nbsp;Sharma</span> <span class="dia">&#9670;</span></span></p>
@@ -453,9 +464,6 @@
             <div class="about-duo">
               <div class="img-frame">
                 <img src="assets/prince-stage-closeup.jpg" alt="Anchor Prince live on stage in a black blazer and glasses, hosting a luxury wedding — best wedding anchor in India" loading="lazy" />
-              </div>
-              <div class="img-frame">
-                <img src="assets/prince-mic-profile.jpg" alt="Anchor Prince in profile with the mic, hosting a daytime wedding celebration in a printed kurta as guests cheer — best wedding anchor in India" loading="lazy" />
               </div>
             </div>
           </div>
