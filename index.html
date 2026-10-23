@@ -379,6 +379,9 @@
       /* heading line spacing fix 2026-10-23 */
       .hero h1 { line-height: 1.16; }
       @media (max-width: 480px) { .hero h1 { line-height: 1.18; } }
+    
+      /* budget amount nowrap 2026-10-23 */
+      .amt-nowrap { white-space: nowrap; }
     </style>
   </head>
   <body>
@@ -948,7 +951,7 @@
           <div class="wrap narrow" style="margin: 0 auto;">
             <div class="sec-head center">
               <p class="kicker">Budget Selector</p>
-              <h2>Set your budget — <em>₹0 to ₹1 Crore</em></h2>
+              <h2>Set your budget — <em class="amt-nowrap">₹0 to ₹1 Crore</em></h2>
               <p class="sec-sub">Move the slider or pick a chip. Whatever budget you set, our team will build the best possible plan for your wedding within it.</p>
             </div>
             <div class="lx-card" data-budget-widget style="margin-top:0;">
@@ -1383,7 +1386,7 @@
               '<div class="wrap narrow" style="margin: 0 auto;">' +
                 '<div class="sec-head center">' +
                   '<p class="kicker">Budget — ' + c + '</p>' +
-                  '<h2>Set your budget — <em>₹0 to ₹1 Crore</em></h2>' +
+                  '<h2>Set your budget — <em class="amt-nowrap">₹0 to ₹1 Crore</em></h2>' +
                   '<p class="sec-sub">Move the slider or pick a chip — our team will build the best plan for your ' + c + ' wedding within your budget.</p>' +
                 '</div>' +
                 '<div class="lx-card" data-budget-widget style="margin-top:0;">' +
